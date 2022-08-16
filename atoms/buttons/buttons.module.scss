@@ -1,0 +1,98 @@
+@import "../../styles/colors";
+
+.button {
+  text-transform: uppercase;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+  border: none;
+  border-style: none;
+  outline: none;
+  border-radius: 1.5px;
+  font-weight: 800;
+  width: fit-content;
+
+  &:disabled {
+    text-decoration: line-through;
+    background-color: #e5e5e5;
+    color: #b0b0b0;
+    cursor: not-allowed;
+  }
+}
+
+.full_width_btn {
+  width: 100%;
+}
+
+.sm {
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.5rem;
+}
+
+.lg {
+  padding: 1.4rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.md {
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.65rem;
+}
+
+.outline-btn-gold {
+  background-color: transparent;
+  border: 1px solid $blue;
+  color: $blue;
+}
+
+.outline-btn-blue {
+  background-color: transparent;
+  border: 0.8px solid $blue;
+  color: $blue;
+}
+
+.outline-btn-red {
+  background-color: transparent;
+  //   border: 0.8px solid $plain-red;
+  //   color: $plain-red;
+}
+
+.outline-btn-grey {
+  background-color: transparent;
+  //   border: 0.8px solid $white-border;
+  //   color: $white-border;
+}
+
+.filled-btn-gold {
+  background-color: $blue;
+  color: $white;
+}
+
+.filled-btn-blue {
+  background-color: $blue;
+  color: $white;
+}
+
+.filled-btn-grey {
+  //   background-color: $white-border;
+  //   color: $black;
+}
+
+.btn_children {
+  display: flex;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

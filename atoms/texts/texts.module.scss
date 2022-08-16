@@ -1,0 +1,87 @@
+@import "../../styles/fonts";
+
+.p {
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+}
+
+.p-sm {
+  font-size: 0.75rem;
+  line-height: 1.188rem;
+}
+
+.h1 {
+  font-size: 2.25rem;
+  line-height: 2.723rem;
+}
+
+.h2 {
+  font-size: 2rem;
+  line-height: 2.723rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+}
+
+.h4 {
+  font-size: 1.25rem;
+  line-height: 1.688rem;
+}
+
+.h5 {
+  font-size: 1rem;
+  line-height: 1.313rem;
+}
+
+.sub-heading {
+  font-size: 0.875rem;
+  line-height: 1.195rem;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.inherit {
+  text-align: inherit;
+}
+
+.absolute {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+}
+
+.relative {
+  position: relative;
+}
