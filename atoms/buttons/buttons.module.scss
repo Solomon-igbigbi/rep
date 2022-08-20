@@ -54,6 +54,12 @@
   color: $blue;
 }
 
+.outline-btn-white {
+  background-color: transparent;
+  border: 0.8px solid $white;
+  color: $white;
+}
+
 .outline-btn-red {
   background-color: transparent;
   //   border: 0.8px solid $plain-red;

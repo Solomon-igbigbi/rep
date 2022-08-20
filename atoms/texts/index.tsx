@@ -16,7 +16,7 @@ const Text = ({
   const type = {
     p: (
       <p
-        className={`${styles[variant]} ${color}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]} ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline}  ${
           bold ? styles.bold : styles.normal
@@ -28,7 +28,7 @@ const Text = ({
     ),
     "p-sm": (
       <p
-        className={`${styles[variant]} ${color}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]} ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
@@ -39,7 +39,7 @@ const Text = ({
     ),
     h2: (
       <h2
-        className={`${styles[variant]} ${color}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]} ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
@@ -50,7 +50,7 @@ const Text = ({
     ),
     h3: (
       <h3
-        className={`${styles[variant]} ${color}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]} ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
@@ -61,7 +61,7 @@ const Text = ({
     ),
     h4: (
       <h4
-        className={`${styles[variant]} ${color}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]} ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
@@ -72,7 +72,7 @@ const Text = ({
     ),
     h5: (
       <h5
-        className={`${styles[variant]} ${color}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]} ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
@@ -83,7 +83,7 @@ const Text = ({
     ),
     "sub-heading": (
       <h6
-        className={`${styles[variant]} ${color}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]} ${styles[color]}}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
@@ -94,7 +94,7 @@ const Text = ({
     ),
     h1: (
       <h1
-        className={`${styles[variant]} ${color}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]} ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal

@@ -3,4 +3,5 @@ import { ReactNode } from "react";
 export interface ICard {
   children: ReactNode;
   border?: boolean;
+  row?: boolean;
 }

@@ -27,6 +27,7 @@ const Button = ({
     gold: styles.gold,
     red: styles.red,
     grey: styles.grey,
+    white: styles.white
   };
 
   const variantEnum =

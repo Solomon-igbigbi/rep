@@ -1,8 +1,7 @@
 @import "../../styles/colors";
 
 .card {
-  padding: 1rem;
-  width: auto;
+  width: 75%;
   height: auto;
   background-color: $white;
   border-radius: 10px;
@@ -11,4 +10,8 @@
 
 .border {
   border: 2.67191px solid #d1a33b;
+}
+
+.row {
+  display: flex;
 }

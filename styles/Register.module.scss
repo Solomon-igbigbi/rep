@@ -1,0 +1,47 @@
+@import "./colors";
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background: url("../assests/png/bg-image.png"), #ecf8ff;
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+
+        .cardLeft {
+            background: #012160;
+            background-size: cover;
+            padding: 1rem;
+            width:40%;
+            border-radius: 10px;
+
+            .cardlmid {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0 3rem;
+
+            }
+        }
+
+        .cardRight {
+            padding: 1rem;
+        }
+    }
+}
