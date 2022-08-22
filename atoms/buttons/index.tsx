@@ -8,12 +8,14 @@ const Button = ({
   children,
   disabled = false,
   fullWidth = false,
+  shadows = false,
   variant = "filled",
   size = "lg",
   color = "gold",
   textTransform = "uppercase",
   icon,
   isLoading,
+  style,
   onClick,
 }: IButton): JSX.Element => {
   const btnSize = {
@@ -24,10 +26,12 @@ const Button = ({
 
   const colors = {
     blue: styles.blue,
+    blue2: styles.blue2,
     gold: styles.gold,
     red: styles.red,
     grey: styles.grey,
-    white: styles.white
+    white: styles.white,
+    skyblue: styles.skyblue
   };
 
   const variantEnum =
@@ -45,10 +49,12 @@ const Button = ({
       className={`${fullWidth && styles.full_width_btn} ${
         styles[variantEnum]
       } ${styles.button} ${styles[textTransform]} 
+      ${shadows && styles.shadows}
       ${btnSize[size]} 
       ${colors[color]}`}
       disabled={disabled}
       id="button"
+      style={style}
       onClick={handleClick}
       data-testid="button"
     >

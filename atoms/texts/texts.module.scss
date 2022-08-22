@@ -4,41 +4,49 @@
 .p {
   font-size: 0.875rem;
   line-height: 1.4rem;
+  text-align: center;
 }
 
 .p-sm {
   font-size: 0.75rem;
   line-height: 1.188rem;
+  text-align: center;
 }
 
 .h1 {
   font-size: 2.25rem;
   line-height: 2.723rem;
+  text-align: center;
 }
 
 .h2 {
   font-size: 2rem;
   line-height: 2.723rem;
+  text-align: center;
 }
 
 .h3 {
   font-size: 1.5rem;
   line-height: 1.813rem;
+  text-align: center;
 }
 
 .h4 {
   font-size: 1.25rem;
-  line-height: 1.688rem;
+  line-height: 1rem;
+  text-align: center;
 }
 
 .h5 {
   font-size: 1rem;
   line-height: 1.313rem;
+  text-align: center;
 }
 
 .sub-heading {
   font-size: 0.875rem;
   line-height: 1.195rem;
+  text-align: center;
 }
 
 .normal {
@@ -91,4 +99,10 @@
 }
 .white {
   color: $white;
+}
+.blue {
+  color: $blue;
+}
+.blue2 {
+  color: $blue2
 }

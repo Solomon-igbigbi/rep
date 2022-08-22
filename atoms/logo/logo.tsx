@@ -3,7 +3,7 @@ import { ILogo } from "./logo.typings";
 import RLogo from "../../assests/svg/logo.svg";
 import LLogo from "../../assests/png/Group.png";
 
-const Logo = ({rlogo, llogo, size }: ILogo): JSX.Element => {
+const Logo = ({rlogo, llogo, size, style }: ILogo): JSX.Element => {
 
   return rlogo ? (
     <Image
@@ -11,6 +11,7 @@ const Logo = ({rlogo, llogo, size }: ILogo): JSX.Element => {
       alt="reprezentme logo"
       loading="lazy"
       width={size}
+      style={style}
     />
   ) : llogo ? (
     <Image
@@ -18,6 +19,7 @@ const Logo = ({rlogo, llogo, size }: ILogo): JSX.Element => {
       alt="reprezentme logo"
       loading="lazy"
       width={size}
+      style={style}
     />
   ) : (
     <Image
@@ -25,6 +27,7 @@ const Logo = ({rlogo, llogo, size }: ILogo): JSX.Element => {
       alt="reprezentme logo"
       loading="lazy"
       width={size}
+      style={style}
     />
   );
 }

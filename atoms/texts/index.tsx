@@ -5,6 +5,7 @@ import styles from "./texts.module.scss";
 const Text = ({
   variant = "p",
   children,
+  style,
   color = "black",
   fw = "normal",
   ta = "left",
@@ -16,11 +17,12 @@ const Text = ({
   const type = {
     p: (
       <p
-        className={`${styles[variant]} ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
+        className={`${styles[variant]}   ${styles[color]}  ${styles[fw]} ${styles[ta]} ${
           styles[position]
         } ${underline && styles.underline}  ${
           bold ? styles.bold : styles.normal
         }`}
+        style={style}
         onClick={onClick}
       >
         {children}
@@ -33,6 +35,7 @@ const Text = ({
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
         }`}
+        style={style}
       >
         {children}
       </p>
@@ -44,6 +47,7 @@ const Text = ({
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
         }`}
+        style={style}
       >
         {children}
       </h2>
@@ -55,6 +59,7 @@ const Text = ({
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
         }`}
+        style={style}
       >
         {children}
       </h3>
@@ -66,6 +71,7 @@ const Text = ({
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
         }`}
+        style={style}
       >
         {children}
       </h4>
@@ -77,6 +83,7 @@ const Text = ({
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
         }`}
+        style={style}
       >
         {children}
       </h5>
@@ -88,6 +95,7 @@ const Text = ({
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
         }`}
+        style={style}
       >
         {children}
       </h6>
@@ -99,6 +107,7 @@ const Text = ({
         } ${underline && styles.underline} ${
           bold ? styles.bold : styles.normal
         }`}
+        style={style}
       >
         {children}
       </h1>
