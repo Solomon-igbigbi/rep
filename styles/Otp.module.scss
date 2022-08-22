@@ -1,0 +1,79 @@
+@import "./colors";
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background: url("../assests/png/bg-image.png"), #ecf8ff;
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+
+        .cardleft {
+            padding: 1rem 0rem 0rem 1.5rem;
+            width:40%;
+            display: flex;
+            flex-direction: column;
+            background-color: $blue2;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            gap: 40px;
+
+        }
+
+        .cardright {
+            width: 60%;
+            border: 10px;
+
+            .otpboxes {
+                width: 45%;
+                margin: 0px auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 20px;
+
+                .otpbox {
+                    width: 38px;
+                    height: 38px;
+                    border: 1px solid rgba($color: #ccc7c7, $alpha: 1.0);
+                    border-radius: 10px;
+                    text-align: center;
+                    font-weight: 400;
+                    color: #424242;
+                }
+
+                .otpbox:focus {
+                    outline: 1px solid rgba($color: #ffc709, $alpha: 1.0);
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+            }
+
+            .resendlink {
+                width: 18%;
+                display: flex;
+                justify-content: space-around;
+                margin: -20px auto;
+            }
+        }
+    }
+}
+

@@ -21,47 +21,58 @@
 }
 
 .full_width_btn {
-  width: 100%;
+  width: 90%;
 }
 
 .sm {
-  padding: 0.7rem 0.8rem;
-  border-radius: 8px;
-  font-size: 0.5rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
 }
 
 .lg {
   padding: 1.4rem 2rem;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 1rem;
 }
 
 .md {
-  padding: 0.55rem 1.2rem;
-  border-radius: 8px;
-  font-size: 0.65rem;
+  padding: 0.55rem 1.8rem;
+  border-radius: 5px;
+  font-size: 0.80rem;
 }
 
 .outline-btn-gold {
   background-color: transparent;
   border: 1px solid $blue;
   color: $blue;
+  font-weight: 400;
 }
 
 .outline-btn-blue {
   background-color: transparent;
   border: 0.8px solid $blue;
   color: $blue;
+  font-weight: 400;
+}
+
+.outline-btn-white {
+  background-color: transparent;
+  border: 0.8px solid $white;
+  color: $white;
+  font-weight: 400;
 }
 
 .outline-btn-red {
   background-color: transparent;
+  font-weight: 400;
   //   border: 0.8px solid $plain-red;
   //   color: $plain-red;
 }
 
 .outline-btn-grey {
   background-color: transparent;
+  font-weight: 400;
   //   border: 0.8px solid $white-border;
   //   color: $white-border;
 }
@@ -69,12 +80,27 @@
 .filled-btn-gold {
   background-color: $blue;
   color: $white;
+  font-weight: 400;
 }
 
 .filled-btn-blue {
   background-color: $blue;
   color: $white;
+  font-weight: 400;
 }
+
+.filled-btn-blue2 {
+  background-color: $blue2;
+  color: $white;
+  font-weight: 400;
+}
+
+.filled-btn-skyblue {
+  background-color: $skyblue;
+  color: $black;
+  font-weight: 400;
+}
+
 
 .filled-btn-grey {
   //   background-color: $white-border;
@@ -95,4 +121,7 @@
 
 .uppercase {
   text-transform: uppercase;
+}
+.shadows {
+  box-shadow: 0px 10.6876px 18.7033px rgba(0, 0, 0, 0.1);
 }
