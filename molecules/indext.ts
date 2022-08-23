@@ -1,4 +1,5 @@
 import Navbar from "./headers/navbar";
+import Selects from "./selects/selects";
 import NavLinksIcon from "./navlinks-icons";
 
-export { Navbar, NavLinksIcon };
+export { Navbar, Selects, NavLinksIcon };
