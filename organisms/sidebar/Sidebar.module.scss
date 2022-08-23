@@ -1,0 +1,44 @@
+@import "../../styles/colors";
+
+.sidebar {
+  background-color: $blue-400;
+  width: 90%;
+  height: 100vh;
+  position: relative;
+  // top: 0;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .avatar {
+    height: 80% !important;
+    width: 80% !important;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid $blue !important;
+  }
+
+  .exit {
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

@@ -4,7 +4,6 @@ import gplay from "../assests/svg/gplay.svg";
 import astore from "../assests/svg/astore.svg";
 import qrcode from "../assests/svg/qrcode.svg";
 import phone from "../assests/svg/phone.svg";
-import BlueBg from "../assests/svg/bluebg.svg";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { Navbar } from "../molecules/indext";
@@ -16,9 +15,6 @@ const Home: NextPage = () => {
       <Head>
         <title>ReprezentMe</title>
       </Head>
-      <div className={styles.bg_img_2}>
-        <Image className={styles.img} src={BlueBg} alt="background" />
-      </div>
 
       <main className={styles.main}>
         <section className={styles.landing_page}>
@@ -44,10 +40,10 @@ const Home: NextPage = () => {
                   <p className={styles.country}>IN YOUR COUNTRY WITH</p>
                   <div className={styles.banner_aside}>
                     <p className={styles.reprezent}>
-                      <div>
+                      <span>
                         Reprezent<b className={styles.me}>Me</b>
-                      </div>
-                      <div className={styles.hr}></div>
+                      </span>
+                      <span className={styles.hr}></span>
                     </p>
                     <p className={styles.banner_text}>
                       Lend your voice to deepening representative democracy in
