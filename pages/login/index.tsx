@@ -7,8 +7,6 @@ import Group from "../assests/png/Group.png";
 import FacebookIcon from "../assests/png/facebookImg.png";
 import GoogleIcon from "../assests/png/googleImg.png";
 import LinkedinIcon from "../assests/png/linkedinImg.png";
-import { Button }  from "../atoms";
-import { Text } from "../atoms";
 
 const Login: NextPage = () => {
   return (
@@ -16,16 +14,12 @@ const Login: NextPage = () => {
       <Head>
         <title>Login</title>
       </Head>
-      
+
       <main className={styles.main}>
         <div className={styles.loginCard}>
           <div className={styles.cardLeft}>
             <div className={styles.topLogo}>
-              <Image
-                src={Group}
-                alt="reprezentme logo"
-                loading="lazy"
-              />
+              <Image src={Group} alt="reprezentme logo" loading="lazy" />
             </div>
 
             <div className={styles.form}>
@@ -36,48 +30,36 @@ const Login: NextPage = () => {
               </div>
 
               <div className={styles.socials}>
-                <Image
-                  src={FacebookIcon}
-                  alt="facebook icon"
-                  loading="lazy"
-                />
-                <Image
-                  src={GoogleIcon}
-                  alt="google icon"
-                  loading="lazy"
-                />
-                <Image
-                  src={LinkedinIcon}
-                  alt="linkedin icon"
-                  loading="lazy"
-                />
+                <Image src={FacebookIcon} alt="facebook icon" loading="lazy" />
+                <Image src={GoogleIcon} alt="google icon" loading="lazy" />
+                <Image src={LinkedinIcon} alt="linkedin icon" loading="lazy" />
               </div>
 
               <div className={styles.username}>
-                  <input type="text" placeholder="Username" />
-                </div>
-                <div className={styles.password}>
-                  <input type="password" placeholder="Password" />
-                </div>
+                <input type="text" placeholder="Username" />
+              </div>
+              <div className={styles.password}>
+                <input type="password" placeholder="Password" />
+              </div>
 
-                <div className={styles.forgot}>
-                  <Link href="#">Forgot Password?</Link>
-                </div>
+              <div className={styles.forgot}>
+                <Link href="#">Forgot Password?</Link>
+              </div>
 
-                <button>Login now</button>
+              <button>Login now</button>
             </div>
           </div>
           <div className={styles.cardRight}>
             <span className={styles.text1}>Hello, Friends</span>
-            <span className={styles.text2}>Enter your personal details and strat journy with us</span>
-            <button>
-              SIGN UP
-            </button>
+            <span className={styles.text2}>
+              Enter your personal details and strat journy with us
+            </span>
+            <button>SIGN UP</button>
           </div>
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
 export default Login;

@@ -1,0 +1,10 @@
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .img {
+    height: 30px !important;
+    width: 30px !important;
+  }
+}
