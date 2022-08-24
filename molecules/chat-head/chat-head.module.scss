@@ -1,0 +1,12 @@
+@import "../../styles/colors";
+
+.chat_head {
+  width: 100%;
+  background-color: $white;
+  height: 15vh;
+  padding: 1.5rem 2rem;
+
+  .room_details {
+    display: flex;
+  }
+}

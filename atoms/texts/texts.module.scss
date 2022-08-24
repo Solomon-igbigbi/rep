@@ -3,7 +3,7 @@
 
 .p {
   font-size: 0.875rem;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
   text-align: center;
 }
 
@@ -104,5 +104,9 @@
   color: $blue;
 }
 .blue2 {
-  color: $blue2
+  color: $blue2;
+}
+
+.no-margin {
+  margin: 0;
 }

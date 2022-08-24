@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+
+.chatBar {
+  display: flex;
+  width: 100%;
+  border: 1px solid $border-line;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0rem;
+
+  .time {
+    align-self: flex-start;
+  }
+}

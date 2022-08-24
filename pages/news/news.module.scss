@@ -1,0 +1,53 @@
+@import "../../styles/colors";
+
+.body {
+  display: flex;
+
+  .aside {
+    width: 30%;
+    padding: 2rem;
+    background-color: $white;
+
+    .notificationBar {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0rem;
+
+      .update {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .write {
+        justify-self: flex-end;
+      }
+    }
+
+    .chats {
+      height: 75vh;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  .left {
+    width: 70%;
+
+    .left_body {
+      height: 85vh;
+      background-color: $smoke;
+      padding: 0.5rem 2.5rem;
+    }
+  }
+}
+
+.chatGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
