@@ -6,7 +6,7 @@ import qrcode from "../assests/svg/qrcode.svg";
 import phone from "../assests/svg/phone.svg";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import { Navbar } from "../molecules/indext";
+import { Navbar } from "../molecules";
 import { Text } from "../atoms";
 
 const Home: NextPage = () => {

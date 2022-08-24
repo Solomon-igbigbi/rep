@@ -1,0 +1,78 @@
+@import "../../styles/colors";
+
+.input {
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid $dark-gray;
+  padding: 0 1rem;
+  background-color: $white;
+}
+
+// Icon Input Styles
+.icon_input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: $white;
+
+  // .lg {
+  //   width: 31.2rem;
+  //   padding: 0.8rem 1rem;
+  // }
+
+  // .md {
+  //   width: 15.125rem;
+  //   padding: 0.8rem 1rem;
+  // }
+
+  .icon_input_field {
+    border-radius: 11px;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    // border: 1px solid $dark-gray;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1rem;
+    background-color: $white;
+    box-shadow: 0px -0.31px 4.60692px 1.84277px rgba(121, 197, 239, 0.38);
+  }
+
+  .icon {
+    position: absolute;
+  }
+
+  .right {
+    right: 15px;
+  }
+
+  .left {
+    left: 10px;
+  }
+}
+
+.checkbox {
+  width: 1rem;
+}
+
+.textarea {
+  width: 500px;
+  height: 200px;
+  padding: 1rem;
+}
+
+.sm {
+  width: 12.125rem;
+  padding: 0.5rem 1rem;
+}
+
+.lg {
+  width: 31.2rem;
+}
+
+.md {
+  width: 15.125rem;
+}
+
+.fullWidth {
+  width: 100%;
+}

@@ -12,11 +12,13 @@ export const Layout = ({
 }: ILayout): React.ReactElement => {
   return (
     <div className={styles.bg}>
-      <Head>{head}</Head>
+      <Head>
+        <title>{head}</title>
+      </Head>
       <div className={styles.sidebar}>
         <SideBar />
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>{children}</div>
     </div>
   );
 };
