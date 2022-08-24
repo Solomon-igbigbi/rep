@@ -42,6 +42,14 @@
       height: 85vh;
       background-color: $smoke;
       padding: 0.5rem 2.5rem;
+
+      .message {
+        display: flex;
+
+        .message_left {
+          width: 50%;
+        }
+      }
     }
   }
 }
