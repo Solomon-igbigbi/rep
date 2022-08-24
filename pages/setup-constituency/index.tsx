@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Logo, Card, Text, Button } from "../atoms";
-import { Selects } from "../molecules"
-import styles from "../styles/SetConstituency.module.scss"
+import { Logo, Card, Text, Button } from "../../atoms";
+import { Selects } from "../../molecules"
+import styles from "./SetConstituency.module.scss"
 import React from "react";
 import { message, Steps, Select } from 'antd';
 import 'antd/dist/antd.css';
