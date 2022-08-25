@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import React from "react";
+import React, { ChangeEvent } from "react";
 import { Button, IconInput, Text } from "../../atoms";
 import { ChatBar, Layout } from "../../template";
 import notification from "../../assests/svg/notificationBell.svg";
@@ -16,11 +16,24 @@ import ChatHead from "../../molecules/chat-head";
 import { MessageCard } from "../../molecules";
 
 const News: NextPage = () => {
+  const handleTabChange = (key: string) => {
+    console.log(key);
+  };
   return (
     <Layout active="news" head="News">
       <div className={styles.body}>
         <div className={styles.aside}>
-          <IconInput icon={search} />
+          <IconInput
+            icon={search}
+            fullWidth
+            value={""}
+            placeholder={""}
+            name={""}
+            type={"number"}
+            onChange={function (e: ChangeEvent<HTMLInputElement>): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
           <div className={styles.notificationBar}>
             <div className={styles.update}>
               <Text bold>Updates</Text>
@@ -55,7 +68,23 @@ const News: NextPage = () => {
         </div>
         <div className={styles.left}>
           <div>
-            <ChatHead />
+            <ChatHead
+              onChange={handleTabChange}
+              tabs={[
+                {
+                  name: "Our Reps",
+                  key: "Our Reps",
+                },
+                {
+                  name: "Admin",
+                  key: "Admin",
+                },
+                {
+                  name: "Sponsored",
+                  key: "Sponsored",
+                },
+              ]}
+            />
             <div className={styles.left_body}>
               <MessageCard picture={roompic}>
                 <div className={styles.message}>
@@ -103,8 +132,21 @@ const News: NextPage = () => {
                       this application? Take a quick tour.
                     </Text>
                     <div className={styles.message_button}>
-                      <Button size="sm">SIGN IN</Button>
-                      <Button size="sm" variant="outline">
+                      <Button
+                        size="sm"
+                        onClick={function (data?: any): void {
+                          throw new Error("Function not implemented.");
+                        }}
+                      >
+                        SIGN IN
+                      </Button>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={function (data?: any): void {
+                          throw new Error("Function not implemented.");
+                        }}
+                      >
                         TOUR
                       </Button>
                     </div>
@@ -140,7 +182,14 @@ const News: NextPage = () => {
                           <Image src={like} />
                           <Image src={dislike} />
                         </div>
-                        <Button size="md">View More</Button>
+                        <Button
+                          size="md"
+                          onClick={function (data?: any): void {
+                            throw new Error("Function not implemented.");
+                          }}
+                        >
+                          View More
+                        </Button>
                       </div>
                     </div>
                   </div>

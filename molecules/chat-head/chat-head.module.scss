@@ -3,10 +3,13 @@
 .chat_head {
   width: 100%;
   background-color: $white;
-  height: 15vh;
+  // height: 13vh;
+  height: auto;
   padding: 1.5rem 2rem;
+  padding-bottom: 0px;
 
   .room_details {
     display: flex;
+    gap: 0.5rem;
   }
 }

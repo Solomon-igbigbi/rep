@@ -13,7 +13,7 @@ export const Layout = ({
   return (
     <div className={styles.bg}>
       <Head>
-        <title>{head}</title>
+        <title>{`Reprezent Me | ${head}`}</title>
       </Head>
       <div className={styles.sidebar}>
         <SideBar />

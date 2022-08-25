@@ -12,4 +12,5 @@ export interface INavLinks {
     | "gray"
     | "green"
     | "blue2";
+  onClick: any;
 }

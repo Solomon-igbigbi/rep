@@ -5,53 +5,56 @@ import Image from "next/image";
 import styles from "./Register.module.scss";
 import { Button, Logo, Card, Text } from "../../atoms";
 import leftIcon from "../../assests/png/lefticon.png";
+import { useRouter } from "next/router";
 
 const Register: NextPage = () => {
+  const router = useRouter();
   const margins = {
     marginTop: "-20px",
-  }
+  };
+
+  const gotoOTP = () => {
+    router.push("/otp");
+  };
 
   return (
     <div className={styles.container}>
       <Head>
         <title>Register</title>
       </Head>
-      
+
       <main className={styles.main}>
-        <Card
-          row={true}
-        >
+        <Card row={true}>
           <div className={styles.cardLeft}>
-            <Logo
-              rlogo={true}
-              size={100}
-            />
+            <Logo rlogo={true} size={100} />
             <div className={styles.cardlmid}>
-              <Text color="white" variant="h2" bold={true} >Welcome Back!</Text>
+              <Text color="white" variant="h2" bold={true}>
+                Welcome Back!
+              </Text>
               <div
                 style={{
                   width: "180px",
                 }}
               >
-                <Text 
-                  color="white" 
-                  variant="h5" 
+                <Text
+                  color="white"
+                  variant="h5"
                   ta="center"
                   children="To keep connected with us please login
                     with your personal info"
-                    style={margins}
+                  // style={margins}
                 />
               </div>
-                <Button 
-                  size="md"
-                  color="white"
-                  variant="outline" children={undefined} 
-                  onClick={function (data?: any): void {
-                    console.log(data)
-                  } }
-                >
-                  sign in
-                </Button>
+              <Button
+                size="md"
+                color="white"
+                variant="outline"
+                onClick={function (data?: any): void {
+                  console.log(data);
+                }}
+              >
+                sign in
+              </Button>
             </div>
             <div className={styles.leftcardbottom}>
               <Image
@@ -61,38 +64,26 @@ const Register: NextPage = () => {
                 loading="lazy"
                 width={30}
               />
-              <Text
-                variant="p-sm"
-                color="white"
-              >Back</Text>
+              <Text variant="p-sm" mg="no-margin" color="white">
+                Back
+              </Text>
             </div>
           </div>
 
           <div className={styles.cardRight}>
-            <Text
-              variant="h2"
-              color="black"
-              ta="center"
-            >
+            <Text variant="h2" color="black" ta="center">
               Register
             </Text>
-            <Text
-              variant="h4"
-              ta="center"
-              style={margins}
-            >Register to connect with your representatives</Text>
+            <Text variant="h4" ta="center" style={margins}>
+              Register to connect with your representatives
+            </Text>
             <div
               style={{
                 width: "250px",
-                margin: "0px auto"
+                margin: "40px auto",
               }}
             >
-              <Text
-                variant="p-sm"
-                color="blue2"
-                ta="center"
-                style={margins}
-              >
+              <Text variant="p-sm" color="blue2" ta="center" style={margins}>
                 Where would you like to interact with your representatives?
               </Text>
             </div>
@@ -102,28 +93,29 @@ const Register: NextPage = () => {
                 margin: "0px auto",
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-between"
+                justifyContent: "space-between",
               }}
             >
-              <Button 
+              <Button
                 size="md"
                 color="blue"
                 textTransform="lowercase"
                 shadows={true}
                 onClick={function (data?: any): void {
                   throw new Error("Function not implemented.");
-                } }
+                }}
               >
                 in my state of Origin
               </Button>
-              <Button 
+              <Button
                 size="md"
                 color="skyblue"
                 textTransform="lowercase"
                 shadows={true}
-              onClick={function (data?: any): void {
-                throw new Error("Function not implemented.");
-              } }>
+                onClick={function (data?: any): void {
+                  throw new Error("Function not implemented.");
+                }}
+              >
                 in my state of Residence
               </Button>
             </div>
@@ -136,16 +128,15 @@ const Register: NextPage = () => {
             </div>
             <div
               style={{
-                margin: "30px 0px 30px 50px"
+                margin: "30px 0px 30px 50px",
               }}
             >
-              <Button 
-              fullWidth={true}
-              variant="filled"
-              color="blue2"
-              onClick={function (data?: any): void {
-                console.log(data)
-              } }>
+              <Button
+                fullWidth={true}
+                variant="filled"
+                color="blue2"
+                onClick={gotoOTP}
+              >
                 create account
               </Button>
             </div>
@@ -153,7 +144,7 @@ const Register: NextPage = () => {
         </Card>
       </main>
     </div>
-  )
-}
+  );
+};
 
 export default Register;
