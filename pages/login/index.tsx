@@ -2,13 +2,13 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Login.module.scss";
-import Group from "../assests/png/Group.png";
-import FacebookIcon from "../assests/png/facebookImg.png";
-import GoogleIcon from "../assests/png/googleImg.png";
-import LinkedinIcon from "../assests/png/linkedinImg.png";
+import styles from "./Login.module.scss";
+import Group from "../../assests/png/Group.png";
+import FacebookIcon from "../../assests/png/facebookImg.png";
+import GoogleIcon from "../../assests/png/googleImg.png";
 
 const Login: NextPage = () => {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -32,7 +32,7 @@ const Login: NextPage = () => {
               <div className={styles.socials}>
                 <Image src={FacebookIcon} alt="facebook icon" loading="lazy" />
                 <Image src={GoogleIcon} alt="google icon" loading="lazy" />
-                <Image src={LinkedinIcon} alt="linkedin icon" loading="lazy" />
+                <Image src={GoogleIcon} alt="linkedin icon" loading="lazy" />
               </div>
 
               <div className={styles.username}>
@@ -45,8 +45,9 @@ const Login: NextPage = () => {
               <div className={styles.forgot}>
                 <Link href="#">Forgot Password?</Link>
               </div>
-
-              <button>Login now</button>
+              <Link href="/news">
+                <button>Login now</button>
+              </Link>
             </div>
           </div>
           <div className={styles.cardRight}>
@@ -54,7 +55,9 @@ const Login: NextPage = () => {
             <span className={styles.text2}>
               Enter your personal details and strat journy with us
             </span>
-            <button>SIGN UP</button>
+            <Link href="/register">
+              <button>SIGN UP</button>
+            </Link>
           </div>
         </div>
       </main>

@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import { Button, Logo, Card, Text } from "../atoms";
-import styles from "../styles/Otp.module.scss";
-import IphoneImg from "../assests/png/iphoneimg.png";
-import leftIcon from "../assests/png/lefticon.png";
-import dust from "../assests/png/dust.png";
-import Verified from "../assests/png/verified.png"
+import { Button, Logo, Card, Text } from "../../atoms";
+import styles from "./Otp.module.scss";
+import IphoneImg from "../../assests/png/iphoneimg.png";
+import leftIcon from "../../assests/png/lefticon.png";
+import dust from "../../assests/png/dust.png";
+import Verified from "../../assests/png/verified.png"
 import { display } from "@mui/system";
 
 const Register: NextPage = () => {

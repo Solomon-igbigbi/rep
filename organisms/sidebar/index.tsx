@@ -19,15 +19,17 @@ const SideBar = () => {
         <Image src={PlainLogo} />
         <Image className={styles.avatar} src={Avatar} alt="avatar" />
       </div>
-      <div className={styles.nav_links}>
-        <NavLinksIcon text="Activity" icon={Notification} />
-        <NavLinksIcon text="Chat" icon={Chats} />
-        <NavLinksIcon text="Polls" icon={Polls} />
-        <NavLinksIcon text="Explore" icon={Group} />
-        <NavLinksIcon text="Settings" icon={Settings} />
-      </div>
-      <div className={styles.exit}>
-        <NavLinksIcon icon={Exit} text="" />
+      <div className={styles.navs}>
+        <div className={styles.nav_links}>
+          <NavLinksIcon text="Activity" icon={Notification} />
+          <NavLinksIcon text="Chat" icon={Chats} />
+          <NavLinksIcon text="Polls" icon={Polls} />
+          <NavLinksIcon text="Explore" icon={Group} />
+          <NavLinksIcon text="Settings" icon={Settings} />
+        </div>
+        <div className={styles.exit}>
+          <NavLinksIcon icon={Exit} text="" />
+        </div>
       </div>
     </div>
   );
