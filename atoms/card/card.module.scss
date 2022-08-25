@@ -19,9 +19,18 @@
 .row {
   display: flex;
 }
-.background {
+
+.backgrounsd {
   background-image: url("../../assests/png/dust.png");
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: 60px 10px;
+}
+
+.no-radius {
+  border-radius: 0px;
+}
+
+.fullWidth {
+  width: auto;
 }

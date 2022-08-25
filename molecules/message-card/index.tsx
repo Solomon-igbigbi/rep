@@ -1,14 +1,25 @@
 import React, { ReactElement } from "react";
 import { Card } from "../../atoms";
-import roompic from "../../assests/svg/grouppicture.svg";
 import Image from "next/image";
 import styles from "./message-card.module.scss";
 
-const MessageCard = ({ children }: { children: ReactElement }) => {
+const MessageCard = ({
+  children,
+  picture,
+  fullWidth,
+  br,
+}: {
+  children: ReactElement;
+  picture?: string;
+  fullWidth?: boolean;
+  br?: boolean;
+}) => {
   return (
     <div className={styles.message_card}>
-      <Image src={roompic} />
-      <Card>{children}</Card>
+      <Image src={picture ? picture : ""} />
+      <Card fullWidth={fullWidth} br={`${!br && "no-radius"}`}>
+        {children}
+      </Card>
     </div>
   );
 };
