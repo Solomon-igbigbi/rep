@@ -49,9 +49,7 @@ const Register: NextPage = () => {
                 size="md"
                 color="white"
                 variant="outline"
-                onClick={function (data?: any): void {
-                  console.log(data);
-                }}
+                onClick={() => router.push("/login")}
               >
                 sign in
               </Button>
