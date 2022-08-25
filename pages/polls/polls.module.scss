@@ -1,0 +1,82 @@
+@import "../../styles/colors";
+
+.polls_body {
+  display: flex;
+  //   height: 100%;
+
+  .aside {
+    width: 30%;
+    padding: 2rem;
+    background-color: $white;
+    // height: 100%;
+    overflow-x: scroll;
+    box-shadow: 0px -0.31px 4.60692px 1.84277px rgba(121, 197, 239, 0.38);
+
+    .notificationBar {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0rem;
+
+      .update {
+        display: flex;
+        // gap: 1rem;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .write {
+        justify-self: flex-end;
+      }
+    }
+
+    .chats {
+      height: 70%;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  .left {
+    width: 70%;
+    height: 103vh;
+    // overflow: scroll;
+
+    .polls_left_body {
+      background-color: $smoke;
+      padding: 2rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      height: 90vh;
+      max-height: 90vh;
+      overflow-x: scroll;
+      position: relative;
+
+      .empty_polls {
+        box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 50%;
+        height: 193px;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.chatGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}

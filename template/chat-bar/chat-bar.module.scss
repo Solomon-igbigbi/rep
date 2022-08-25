@@ -5,10 +5,11 @@
   width: 100%;
   border: 1px solid $border-line;
   border-radius: 6px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
   padding: 1rem 0rem;
+  padding-left: 1rem;
 
   .time {
     align-self: flex-start;
