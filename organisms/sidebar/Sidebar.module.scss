@@ -3,7 +3,6 @@
 .sidebar {
   background-color: $blue-400;
   width: 90%;
-  height: 100vh;
   position: relative;
   // top: 0;
   color: white;
@@ -17,28 +16,36 @@
   flex-direction: column;
   gap: 4rem;
 
-  .avatar {
-    height: 80% !important;
-    width: 80% !important;
-    background-color: white;
-    border-radius: 50%;
-    border: 3px solid $blue !important;
-  }
-
-  .exit {
-    position: absolute;
-    bottom: 2rem;
-  }
-
-  .nav_links {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-
   .top {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    .avatar {
+      height: 80% !important;
+      width: 80% !important;
+      background-color: white;
+      border-radius: 50%;
+      border: 3px solid $blue !important;
+    }
+  }
+
+  .navs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .exit {
+      bottom: 2rem;
+      margin-top: 8rem;
+    }
+  
+    .nav_links {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
   }
 }
