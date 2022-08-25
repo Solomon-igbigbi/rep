@@ -6,13 +6,10 @@ import { ChatHead, MessageCard } from "../../molecules";
 import { ChatBar, Layout } from "../../template";
 import styles from "./polls.module.scss";
 
-// import notification from "../../assests/svg/notificationBell.svg";
-import roompic from "../../assests/svg/grouppicture.svg";
-import like from "../../assests/svg/like.svg";
-import dislike from "../../assests/svg/dislike.svg";
-import army from "../../assests/svg/army.svg";
+// import notification from "../../assests/svg/notificationBell.svg";svg";
+
 import search from "../../assests/svg/search.svg";
-import parade from "../../assests/svg/parade.svg";
+
 import write from "../../assests/svg/write.svg";
 
 const Polls: NextPage = () => {

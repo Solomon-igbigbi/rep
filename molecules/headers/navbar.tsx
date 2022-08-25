@@ -22,7 +22,7 @@ const links = [
   },
   {
     name: "LOGIN",
-    path: "/",
+    path: "/login",
   },
 ];
 
@@ -34,7 +34,9 @@ const Navbar = () => {
           <Logo />
         </div>
         <div>
-          <Text variant="h4">WEB</Text>
+          <Text color="white" variant="h4">
+            WEB
+          </Text>
         </div>
       </div>
       <div className={styles.navigations}>
@@ -45,7 +47,9 @@ const Navbar = () => {
             </Link>
           );
         })}
-        <Button onClick={() => console.log("done")}>Register</Button>
+        <Button onClick={() => window.location.replace("/register")}>
+          Register
+        </Button>
       </div>
     </div>
   );
