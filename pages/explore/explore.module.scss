@@ -1,0 +1,26 @@
+.explore {
+    border-radius: 10px;
+    height: 85vh;
+    background: #fff;
+
+    .exploreHeader {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+    .tabInput {
+        width: 250px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .tab {
+        margin-top: -15px;
+        padding: 2rem;
+        height: 100%;
+        box-shadow: inset 0px 7px 5px 0px  rgb(0 0 0 / 10%);
+    }
+}
