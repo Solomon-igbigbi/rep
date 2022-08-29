@@ -2,12 +2,15 @@ import { NextPage } from "next";
 import React from "react";
 import { Layout } from "../../template";
 import styles from "./explore.module.scss";
-import { Text } from "../../atoms";
+import { Text, Button } from "../../atoms";
 import { Tabs, Input } from "antd";
 import { AntDesignOutlined, UserOutlined } from "@ant-design/icons";
-import { Avatar, Divider, Tooltip } from "antd";
+import { Avatar, Image, Tooltip, Card } from 'antd';
+import { data } from "./data"
+import 'antd/dist/antd.css';
 
 const { TabPane } = Tabs;
+const { Meta } = Card;
 
 const News: NextPage = () => {
   return (
@@ -43,16 +46,140 @@ const News: NextPage = () => {
           <Text>{""}</Text>
           <Text>{""}</Text>
           <TabPane className={styles.tab} tab="Senate Commitee" key="1">
-            Content of Tab Pane 1
+            {
+              data.map((item:any, index: any) => {
+                return (
+                  <div key={index} style={{
+                      marginLeft: "40px",
+                      marginTop: "30px"
+                  }}>
+                    <Card 
+                      hoverable
+                      style={{ width: 200 }}
+                      className={styles.groupCard}
+                    >   
+                      <img 
+                        className={styles.cardImage}
+                        alt="example" 
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" 
+                        style={{
+                            width: "190px",
+                            height: "180px",
+                            margin: "-20px 0px 0px -20px",
+                            borderRadius: "20px"
+                        }}
+                      />
+                      <Text variant="p-sm">
+                        Senate Committee on Agriculture and Rural Development
+                      </Text>
+                      <Button style={margins} color="blue2" size="sm">join</Button>
+                    </Card>
+                  </div>
+                )
+              })
+            }
           </TabPane>
           <TabPane className={styles.tab} tab="Rep Commitee" key="2">
-            Content of Tab Pane 2
+          {
+              data.map((item:any, index: any) => {
+                return (
+                  <div key={index} style={{
+                      marginLeft: "40px",
+                      marginTop: "30px"
+                  }}>
+                    <Card 
+                      hoverable
+                      style={{ width: 200 }}
+                      className={styles.groupCard}
+                    >   
+                      <img 
+                        className={styles.cardImage}
+                        alt="example" 
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" 
+                        style={{
+                            width: "190px",
+                            height: "180px",
+                            margin: "-20px 0px 0px -20px",
+                            borderRadius: "20px"
+                        }}
+                      />
+                      <Text variant="p-sm">
+                        Senate Committee on Agriculture and Rural Development
+                      </Text>
+                      <Button style={margins} color="blue2" size="sm">join</Button>
+                    </Card>
+                  </div>
+                )
+              })
+            }
           </TabPane>
           <TabPane className={styles.tab} tab="House of Assembly" key="3">
-            Content of Tab Pane 3
+          {
+              data.map((item:any, index: any) => {
+                return (
+                  <div key={index} style={{
+                      marginLeft: "40px",
+                      marginTop: "30px"
+                  }}>
+                    <Card 
+                      hoverable
+                      style={{ width: 200 }}
+                      className={styles.groupCard}
+                    >   
+                      <img 
+                        className={styles.cardImage}
+                        alt="example" 
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" 
+                        style={{
+                            width: "190px",
+                            height: "180px",
+                            margin: "-20px 0px 0px -20px",
+                            borderRadius: "20px"
+                        }}
+                      />
+                      <Text variant="p-sm">
+                        Senate Committee on Agriculture and Rural Development
+                      </Text>
+                      <Button style={margins} color="blue2" size="sm">join</Button>
+                    </Card>
+                  </div>
+                )
+              })
+            }
           </TabPane>
           <TabPane className={styles.tab} tab="Other Groups" key="4">
-            Content of Tab Pane 3
+          {
+              data.map((item:any, index: any) => {
+                return (
+                  <div key={index} style={{
+                      marginLeft: "40px",
+                      marginTop: "30px"
+                  }}>
+                    <Card 
+                      hoverable
+                      style={{ width: 200 }}
+                      className={styles.groupCard}
+                    >   
+                      <img 
+                        className={styles.cardImage}
+                        alt="example" 
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" 
+                        style={{
+                            width: "190px",
+                            height: "180px",
+                            margin: "-20px 0px 0px -20px",
+                            borderRadius: "20px"
+                        }}
+                      />
+                      <Text variant="p-sm">
+                        Senate Committee on Agriculture and Rural Development
+                      </Text>
+                      <Button style={margins} color="blue2" size="sm">join</Button>
+                    </Card>
+                  </div>
+                )
+              })
+            }
           </TabPane>
         </Tabs>
       </div>
