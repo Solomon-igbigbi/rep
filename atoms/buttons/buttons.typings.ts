@@ -2,7 +2,7 @@ export interface IButton {
   children: any;
   disabled?: boolean;
   fullWidth?: boolean;
-  shadows?: boolean,
+  shadows?: boolean;
   variant?: "outline" | "filled";
   size?: "lg" | "sm" | "md";
   color?: "blue" | "gold" | "red" | "grey" | "white" | "blue2" | "skyblue";

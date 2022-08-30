@@ -1,5 +1,4 @@
 import React from "react";
-import { Text } from "../../atoms";
 import Image from "next/image";
 import { INavLinks } from "./navlinks-icons.typings";
 import styles from "./navlinks.module.scss";

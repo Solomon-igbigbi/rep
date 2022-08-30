@@ -17,12 +17,12 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "testing-library"],
+  plugins: ["react", "@typescript-eslint"],
   overrides: [
     // Only uses Testing Library lint rules in test files
     {
       files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
-      extends: ["plugin:testing-library/react"],
+      // extends: ["plugin:testing-library/react"],
     },
   ],
   rules: {},

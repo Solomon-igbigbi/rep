@@ -1,5 +1,3 @@
-import { IText } from "../../atoms/texts/texts.typings";
-
 export interface INavLinks {
   text: string;
   icon: string;

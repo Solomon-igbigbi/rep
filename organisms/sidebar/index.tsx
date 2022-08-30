@@ -19,7 +19,7 @@ const SideBar = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.top}>
-        <Image src={PlainLogo} />
+        <Image src={PlainLogo} alt="" />
         <Image className={styles.avatar} src={Avatar} alt="avatar" />
       </div>
       <div className={styles.navs}>

@@ -21,7 +21,7 @@ const ChatHead = ({
   return (
     <div className={styles.chat_head}>
       <div className={styles.room_details}>
-        <Image src={roompic} />
+        <Image src={roompic} alt="" />
         <div>
           <Text mg="no-margin" bold>
             {name || "Ado / Ogbadibo / Okpokwu"}

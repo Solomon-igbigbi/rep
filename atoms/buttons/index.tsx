@@ -31,7 +31,7 @@ const Button = ({
     red: styles.red,
     grey: styles.grey,
     white: styles.white,
-    skyblue: styles.skyblue
+    skyblue: styles.skyblue,
   };
 
   const variantEnum =
