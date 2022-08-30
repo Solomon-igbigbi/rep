@@ -13,6 +13,10 @@ const { TabPane } = Tabs;
 const { Meta } = Card;
 
 const News: NextPage = () => {
+  const margins = {
+    marginLeft: "70px"
+}
+
   return (
     <Layout active="news" head="News">
       <div className={styles.explore}>
@@ -72,7 +76,9 @@ const News: NextPage = () => {
                       <Text variant="p-sm">
                         Senate Committee on Agriculture and Rural Development
                       </Text>
-                      <Button style={margins} color="blue2" size="sm">join</Button>
+                      <Button style={margins} color="blue2" size="sm" onClick={function (data?: any): void {
+                        throw new Error("Function not implemented.");
+                      } }>join</Button>
                     </Card>
                   </div>
                 )
@@ -106,7 +112,9 @@ const News: NextPage = () => {
                       <Text variant="p-sm">
                         Senate Committee on Agriculture and Rural Development
                       </Text>
-                      <Button style={margins} color="blue2" size="sm">join</Button>
+                      <Button style={margins} color="blue2" size="sm" onClick={function (data?: any): void {
+                        throw new Error("Function not implemented.");
+                      } }>join</Button>
                     </Card>
                   </div>
                 )
@@ -140,7 +148,9 @@ const News: NextPage = () => {
                       <Text variant="p-sm">
                         Senate Committee on Agriculture and Rural Development
                       </Text>
-                      <Button style={margins} color="blue2" size="sm">join</Button>
+                      <Button style={margins} color="blue2" size="sm"  onClick={function (data?: any): void {
+                        throw new Error("Function not implemented.");
+                      } }>join</Button>
                     </Card>
                   </div>
                 )
@@ -174,7 +184,9 @@ const News: NextPage = () => {
                       <Text variant="p-sm">
                         Senate Committee on Agriculture and Rural Development
                       </Text>
-                      <Button style={margins} color="blue2" size="sm">join</Button>
+                      <Button style={margins} color="blue2" size="sm" onClick={function (data?: any): void {
+                        throw new Error("Function not implemented.");
+                      } }>join</Button>
                     </Card>
                   </div>
                 )
