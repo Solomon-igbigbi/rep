@@ -1,9 +1,10 @@
+import React from "react";
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import 'antd/dist/antd.css';
+import "antd/dist/antd.css";
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />;
-}
+};
 
 export default MyApp;

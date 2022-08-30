@@ -90,7 +90,7 @@ const News: NextPage = () => {
                 <div className={styles.message}>
                   <div className={styles.message_left}>
                     <div className={styles.message_head}>
-                      <Image src={roompic} />
+                      <Image src={roompic} alt="" />
                       <div>
                         <Text bold mg="no-margin">
                           Hello!
@@ -112,7 +112,7 @@ const News: NextPage = () => {
                       </li>
                       <li>
                         <Text mg="no-margin">
-                          Alert you when tasks have been marked as 'at risk'
+                          Alert you when tasks have been marked as at risk
                         </Text>
                       </li>
                       <li>
@@ -152,7 +152,7 @@ const News: NextPage = () => {
                     </div>
                   </div>
                   <div className={styles.message_right}>
-                    <Image src={parade} />
+                    <Image src={parade} alt="" />
                   </div>
                 </div>
               </MessageCard>
@@ -161,7 +161,7 @@ const News: NextPage = () => {
                   <Text color="blue">Sponsored Update</Text>
                   <div className={styles.sponsored_body}>
                     <div className={styles.sponsored_img}>
-                      <Image src={army} />
+                      <Image src={army} alt="" />
                     </div>
                     <div className={styles.sponsored_text}>
                       <div>
@@ -179,8 +179,8 @@ const News: NextPage = () => {
                         <div className={styles.sponsored_reaction}>
                           <Text>You like</Text>
                           <Text color="red">Dislike?</Text>
-                          <Image src={like} />
-                          <Image src={dislike} />
+                          <Image src={like} alt="" />
+                          <Image src={dislike} alt="" />
                         </div>
                         <Button
                           size="md"

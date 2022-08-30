@@ -1,4 +1,4 @@
 export interface ISelects {
-    placeholder?: string;
-    options?: string;
+  placeholder?: string;
+  options?: string;
 }

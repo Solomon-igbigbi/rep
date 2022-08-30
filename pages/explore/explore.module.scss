@@ -1,42 +1,40 @@
 .explore {
-    border-radius: 10px;
-    background: #fff;
-    height: 100vh;
+  border-radius: 10px;
+  background: #fff;
+  height: 100vh;
 
-    .exploreHeader {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 30px;
-        padding-left: 40px;
-    }
-    .tabInput {
-        width: 250px;
-        height: 40px;
+  .exploreHeader {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 40px;
+  }
+  .tabInput {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .tabs {
+    width: 100%;
+    height: 88vh;
+    position: relative;
+
+    .tab {
+      width: 100%;
+      margin-top: -15px;
+      padding: 1rem 1rem 1rem 1rem;
+      height: 65vh;
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: inset 0px 7px 5px 0px #ecf8ff;
+      overflow-y: auto;
+
+      .groupCard {
         border-radius: 20px;
+        box-shadow: 0px 0px 10px 10px #ecf8ff;
+      }
     }
-    .tabs {
-        width: 100%;
-        height: 88vh;
-        position: relative;
-        
-        .tab {
-            width: 100%;
-            margin-top: -15px;
-            padding: 1rem 1rem 1rem 1rem;
-            height: 65vh;
-            display: flex;
-            flex-wrap: wrap;
-            box-shadow: inset 0px 7px 5px 0px  #ecf8ff;
-            overflow-y: auto;
-
-            .groupCard {
-                border-radius: 20px;
-                box-shadow: 0px 0px 10px 10px  #ecf8ff;
-            }
-        }
-    }
-
-    
+  }
 }

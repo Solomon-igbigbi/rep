@@ -1,8 +1,8 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import React, { ChangeEvent, useState } from "react";
-import { Button, IconInput, Text } from "../../atoms";
-import { ChatHead, MessageCard } from "../../molecules";
+import { IconInput, Text } from "../../atoms";
+import { ChatHead } from "../../molecules";
 import { ChatBar, Layout } from "../../template";
 import styles from "./polls.module.scss";
 

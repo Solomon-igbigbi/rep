@@ -4,13 +4,13 @@ import { Logo, Card, Text, Button } from "../../atoms";
 import { Selects } from "../../molecules";
 import styles from "./SetConstituency.module.scss";
 import React from "react";
-import { message, Steps, Select } from "antd";
+import { message, Steps } from "antd";
 import "antd/dist/antd.css";
 import { useRouter } from "next/router";
 
 const { Step } = Steps;
 
-const { Option } = Select;
+// const { Option } = Select;
 
 const steps = [
   {
@@ -28,7 +28,7 @@ const steps = [
 ];
 
 const SetupConstituency: NextPage = () => {
-  const [index, setIndex] = React.useState(1);
+  // const [index, setIndex] = React.useState(1);
 
   const [current, setCurrent] = React.useState(0);
   const router = useRouter();
@@ -58,13 +58,9 @@ const SetupConstituency: NextPage = () => {
             <Logo llogo={true} size={170} />
           </div>
           <div className={styles.title}>
-            <Text
-              variant="h2"
-              color="blue2"
-              bold={true}
-              ta="center"
-              children="Let's setup your constituence"
-            />
+            <Text variant="h2" color="blue2" bold={true} ta="center">
+              {`Let's setup your constituence`}
+            </Text>
           </div>
           <div className={styles.multistep}>
             <Steps current={current}>

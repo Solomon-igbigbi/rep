@@ -1,18 +1,18 @@
-import { Select } from 'antd';
-import { ISelects } from "./selects.typings"
+import React from "react";
+import { Select } from "antd";
+import { ISelects } from "./selects.typings";
 
 const { Option } = Select;
 
-const Selects = ({
-    placeholder,
-    options
-}: ISelects): JSX.Element => (
+const Selects = ({ placeholder, options }: ISelects): JSX.Element => (
   <Select
     showSearch
     style={{ width: 500 }}
     placeholder={placeholder}
     optionFilterProp="children"
-    filterOption={(input, option) => (option!.children as unknown as string).includes(input)}
+    filterOption={(input, option) =>
+      (option!.children as unknown as string).includes(input)
+    }
     filterSort={(optionA, optionB) =>
       (optionA!.children as unknown as string)
         .toLowerCase()

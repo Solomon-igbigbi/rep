@@ -1,10 +1,10 @@
 import Image from "next/image";
+import React from "react";
 import { ILogo } from "./logo.typings";
 import RLogo from "../../assests/svg/logo.svg";
 import LLogo from "../../assests/png/Group.png";
 
-const Logo = ({rlogo, llogo, size, style }: ILogo): JSX.Element => {
-
+const Logo = ({ rlogo, llogo, size, style }: ILogo): JSX.Element => {
   return rlogo ? (
     <Image
       src={RLogo}
@@ -30,6 +30,6 @@ const Logo = ({rlogo, llogo, size, style }: ILogo): JSX.Element => {
       style={style}
     />
   );
-}
+};
 
 export default Logo;

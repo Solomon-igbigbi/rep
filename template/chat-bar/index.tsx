@@ -15,7 +15,7 @@ const ChatBar = ({
 }) => {
   return (
     <div className={styles.chatBar}>
-      <Image src={avatar} />
+      <Image src={avatar} alt="" />
       <div>
         <Text mg="no-margin" bold>
           {name || "Apa Ward"}

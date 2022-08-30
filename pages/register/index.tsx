@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
-import Link from "next/link";
+import React from "react";
+// import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./Register.module.scss";
@@ -40,10 +41,10 @@ const Register: NextPage = () => {
                   color="white"
                   variant="h5"
                   ta="center"
-                  children="To keep connected with us please login
-                    with your personal info"
                   // style={margins}
-                />
+                >
+                  To keep connected with us please login with your personal info
+                </Text>
               </div>
               <Button
                 size="md"

@@ -16,7 +16,7 @@ const MessageCard = ({
 }) => {
   return (
     <div className={styles.message_card}>
-      <Image src={picture ? picture : ""} />
+      <Image alt="" src={picture ? picture : ""} />
       <Card fullWidth={fullWidth} br={`${!br && "no-radius"}`}>
         {children}
       </Card>

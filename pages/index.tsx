@@ -1,13 +1,14 @@
 import type { NextPage } from "next";
+import React from "react";
 import Head from "next/head";
-import gplay from "../assests/svg/gplay.svg";
-import astore from "../assests/svg/astore.svg";
+// import gplay from "../assests/svg/gplay.svg";
+// import astore from "../assests/svg/astore.svg";
 import qrcode from "../assests/svg/qrcode.svg";
 import phone from "../assests/svg/phone.svg";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { Navbar } from "../molecules";
-import { Text } from "../atoms";
+// import { Text } from "../atoms";
 
 const Home: NextPage = () => {
   return (
