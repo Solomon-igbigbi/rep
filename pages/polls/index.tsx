@@ -1,12 +1,16 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import React, { ChangeEvent, useState } from "react";
-import { Progress, Rate,  Button } from "antd";
+import { Progress, Rate, Button } from "antd";
 import { IconInput, Text, Card } from "../../atoms";
 import { ChatHead } from "../../molecules";
 import { ChatBar, Layout } from "../../template";
 import styles from "./polls.module.scss";
-import { TwitterOutlined, FacebookOutlined, LinkOutlined } from "@ant-design/icons"
+import {
+  TwitterOutlined,
+  FacebookOutlined,
+  LinkOutlined,
+} from "@ant-design/icons";
 
 // import notification from "../../assests/svg/notificationBell.svg";svg";
 
@@ -402,8 +406,8 @@ const Polls: NextPage = () => {
                           backgroundColor: "#012160",
                           height: "45px",
                           color: "#fff",
-                          borderRadius: "5px"
-                        }}                      
+                          borderRadius: "5px",
+                        }}
                       >
                         View Result
                       </Button>
@@ -416,7 +420,7 @@ const Polls: NextPage = () => {
                         color: "#fff",
                         width: "200px",
                         height: "45px",
-                        marginTop: "80px"
+                        marginTop: "80px",
                       }}
                     >
                       Submit your Vote
@@ -427,14 +431,19 @@ const Polls: NextPage = () => {
                         borderRadius: "5px",
                         padding: "20px 0px 0px 40px",
                         width: "200px",
-                        marginTop: "20px"
+                        marginTop: "20px",
                       }}
                     >
                       <Text variant="p-sm">Votes</Text>
-                      <Text variant="h2" bold 
-                      style={{
-                        marginTop: "-20px",
-                      }}>58</Text>
+                      <Text
+                        variant="h2"
+                        bold
+                        style={{
+                          marginTop: "-20px",
+                        }}
+                      >
+                        58
+                      </Text>
                     </Card>
 
                     <Card
@@ -445,45 +454,63 @@ const Polls: NextPage = () => {
                       }}
                     >
                       <Text variant="p-sm">Shares</Text>
-                      <div style={{
-                        width: "200px",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "10px",
-                        color: "#1b57ed"
-                      }}>
+                      <div
+                        style={{
+                          width: "200px",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "10px",
+                          color: "#1b57ed",
+                        }}
+                      >
                         <TwitterOutlined />
-                        <Text style={{
-                           color: "#1b57ed",
-                           marginTop: "10px"
-                        }}>Twitter</Text>
+                        <Text
+                          style={{
+                            color: "#1b57ed",
+                            marginTop: "10px",
+                          }}
+                        >
+                          Twitter
+                        </Text>
                       </div>
-                      <div style={{
-                        width: "200px",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "10px",
-                        color: "#012160"
-                      }}>
+                      <div
+                        style={{
+                          width: "200px",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "10px",
+                          color: "#012160",
+                        }}
+                      >
                         <FacebookOutlined />
-                        <Text style={{
-                           color: "#012160",
-                           marginTop: "10px"
-                        }}>Facebook</Text>
+                        <Text
+                          style={{
+                            color: "#012160",
+                            marginTop: "10px",
+                          }}
+                        >
+                          Facebook
+                        </Text>
                       </div>
-                      <div style={{
-                        width: "200px",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "10px",
-                        color: "#f2994a"
-                      }}>
-                          <LinkOutlined />
-                          <Text style={{
-                             color: "#f2994a",
-                             marginTop: "10px"
-                          }}>Copy link</Text>
-                        </div>
+                      <div
+                        style={{
+                          width: "200px",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "10px",
+                          color: "#f2994a",
+                        }}
+                      >
+                        <LinkOutlined />
+                        <Text
+                          style={{
+                            color: "#f2994a",
+                            marginTop: "10px",
+                          }}
+                        >
+                          Copy link
+                        </Text>
+                      </div>
                     </Card>
                   </div>
                 </div>
