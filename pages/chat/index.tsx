@@ -6,19 +6,9 @@ import styles from "./Chat.module.scss";
 import { Input, Col, Row } from "antd";
 // import Image from "next/image";
 import Setting from "../../template/setting";
-import {
-  SearchOutlined,
-  FormOutlined,
-} from "@ant-design/icons";
-
-
-
-
+import { SearchOutlined, FormOutlined } from "@ant-design/icons";
 
 const Chat: NextPage = () => {
-
-
-
   return (
     <Layout active="news" head="News">
       <Setting
@@ -41,15 +31,10 @@ const Chat: NextPage = () => {
                 <FormOutlined />
               </Col>
             </Row>
-
           </div>
         }
-        header={
-         'hello'
-        }
-        content={
-          'hello'
-        }
+        header={"hello"}
+        content={"hello"}
       />
     </Layout>
   );
