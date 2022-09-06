@@ -1,3 +1,4 @@
+@import "../../styles/screens";
 @import "../../styles/colors";
 
 .button {
@@ -123,4 +124,11 @@
 }
 .shadows {
   box-shadow: 0px 10.6876px 18.7033px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: $md) and (min-width: $sm) {
+  .lg {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
 }

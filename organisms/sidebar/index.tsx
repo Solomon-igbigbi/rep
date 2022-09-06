@@ -30,12 +30,12 @@ const SideBar = () => {
             icon={Notification}
           />
           <NavLinksIcon
-            onClick={() => router.push("/news")}
+            onClick={() => router.push("/chat")}
             text="Chat"
             icon={Chats}
           />
           <NavLinksIcon
-            onClick={() => router.push("/polls")}
+            onClick={() => router.replace("/polls")}
             text="Polls"
             icon={Polls}
           />
@@ -45,7 +45,7 @@ const SideBar = () => {
             icon={Group}
           />
           <NavLinksIcon
-            onClick={() => router.push("/news")}
+            onClick={() => router.push("/settings")}
             text="Settings"
             icon={Settings}
           />
