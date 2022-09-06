@@ -166,34 +166,21 @@
 
       .landing_page {
         .body {
-          position: relative;
           width: 100%;
           height: 700px;
-          margin: auto;
-          display: flex;
-          align-items: center;
-          justify-content: center;
 
           .body_card {
-            width: 65%;
+            width: 60%;
             height: 740px;
-            background-color: $smoke;
-            position: absolute;
-            // opacity: 0.84;
-            border-radius: 30px;
             right: 110px;
             top: 90px;
             padding-top: 2.5rem;
 
             .body_content {
               padding: 2rem 2rem;
-              z-index: 100000;
               width: 645px;
               margin: auto;
-              display: flex;
-              flex-direction: column;
               align-items: flex-start;
-              // padding-left: 2rem;
 
               .large_text {
                 font-weight: 700;
@@ -202,17 +189,16 @@
 
               .banner_lg_text_1 {
                 font-size: 4rem;
-                line-height: 0.5rem;
+                line-height: 0.8rem;
               }
 
               .banner_lg_text_2 {
                 font-size: 3.65rem;
-                line-height: 0.5rem;
+                line-height: 0.8rem;
               }
 
               .country {
-                font-size: 3rem;
-                color: $black;
+                font-size: 2.7rem;
                 margin: 0rem 0;
               }
 
@@ -220,50 +206,32 @@
                 width: 565px;
 
                 .reprezent {
-                  color: $blue-400;
-                  font-weight: bold;
                   font-size: 2.813rem;
                   margin: 0rem;
-                  display: flex;
-                  // align-items: flex-start;
                   justify-content: flex-start;
-                  width: 100%;
-
-                  .me {
-                    color: $blue;
-                  }
 
                   .hr {
                     width: 190px;
                     height: 3px;
                     margin-left: 1rem;
-                    background-color: $blue-400;
                   }
                 }
 
                 .banner_text {
                   font-size: 1.125rem;
-                  color: $black;
                 }
 
                 .banner_footer {
-                  display: flex;
+                  width: 90%;
                   justify-content: space-between;
-                  align-items: center;
 
                   .left {
-                    display: flex;
-                    flex-direction: column;
                     gap: 0rem;
 
                     .download {
                       color: $black;
                       font-size: 1.5rem;
                       font-weight: normal;
-
-                      b {
-                        color: $blue-400;
-                      }
                     }
 
                     .donwload_btn {
@@ -271,15 +239,6 @@
                       height: 4.529rem;
                       box-shadow: 1.49545px 0px 14.9545px rgba(0, 0, 0, 0.25);
                       margin-bottom: 1rem;
-                    }
-
-                    .download_google {
-                      background-color: $white;
-                      border-radius: 4px;
-                    }
-                    .download_apple {
-                      background-color: $blue;
-                      border-radius: 4px;
                     }
                   }
                 }
@@ -289,10 +248,108 @@
 
           .phone_img {
             position: absolute;
-            left: 70px;
+            left: 120px;
             top: 20px;
             height: 200px !important;
             width: 280px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $xm) and (min-width: $sm) {
+  .container {
+    height: 135vh;
+    .main {
+      .landing_page {
+        .body {
+          width: 100%;
+          height: 700px;
+
+          .body_card {
+            width: 70%;
+            height: 590px;
+            right: 20px;
+            top: 70px;
+            padding-top: 0.5rem;
+
+            .body_content {
+              padding: 2rem 2rem;
+              width: 580px;
+
+              .large_text {
+                font-weight: 700;
+                margin: 1.5rem 0rem;
+              }
+
+              .banner_lg_text_1 {
+                font-size: 3.7rem;
+                line-height: 0.8rem;
+              }
+
+              .banner_lg_text_2 {
+                font-size: 3.35rem;
+                line-height: 0.8rem;
+              }
+
+              .country {
+                font-size: 2.5rem;
+                margin: 0rem 0;
+              }
+
+              .banner_aside {
+                width: 555px;
+
+                .reprezent {
+                  font-size: 2rem;
+                  margin: 0rem;
+
+                  .hr {
+                    width: 210px;
+                    height: 3px;
+                    margin-left: 1rem;
+                  }
+                }
+
+                .banner_text {
+                  font-size: 1rem;
+                  width: 83%;
+                }
+
+                .banner_footer {
+                  width: 80%;
+                  justify-content: space-between;
+
+                  .right {
+                    width: 160px !important;
+                    height: 100% !important;
+                  }
+
+                  .left {
+                    gap: 0rem;
+
+                    .download {
+                      font-size: 1rem;
+                    }
+
+                    .donwload_btn {
+                      width: 15.575rem;
+                      height: 4rem;
+                      margin-bottom: 1rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .phone_img {
+            left: 100px;
+            top: 20px;
+            height: 200px !important;
+            width: 220px !important;
           }
         }
       }

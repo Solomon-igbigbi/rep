@@ -66,7 +66,11 @@ const Home: NextPage = () => {
                         ></div>
                       </div>
                       <div className={styles.right}>
-                        <Image src={qrcode} alt="scan qr code" />
+                        <Image
+                          src={qrcode}
+                          className={styles.qrcode}
+                          alt="scan qr code"
+                        />
                       </div>
                     </div>
                   </div>
