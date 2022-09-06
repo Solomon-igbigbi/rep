@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./screens";
 
 .container {
   height: 130vh;
@@ -157,118 +158,144 @@
   }
 }
 
-// .footer {
-//   display: flex;
-//   flex: 1;
-//   padding: 2rem 0;
-//   border-top: 1px solid #eaeaea;
-//   justify-content: center;
-//   align-items: center;
-// }
+@media (max-width: $md) and (min-width: $sm) {
+  .container {
+    .main {
+      height: 100%;
+      width: 100%;
 
-// .footer a {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-grow: 1;
-// }
+      .landing_page {
+        .body {
+          position: relative;
+          width: 100%;
+          height: 700px;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-// .title a {
-//   color: #0070f3;
-//   text-decoration: none;
-// }
+          .body_card {
+            width: 65%;
+            height: 740px;
+            background-color: $smoke;
+            position: absolute;
+            // opacity: 0.84;
+            border-radius: 30px;
+            right: 110px;
+            top: 90px;
+            padding-top: 2.5rem;
 
-// .title a:hover,
-// .title a:focus,
-// .title a:active {
-//   text-decoration: underline;
-// }
+            .body_content {
+              padding: 2rem 2rem;
+              z-index: 100000;
+              width: 645px;
+              margin: auto;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              // padding-left: 2rem;
 
-// .title {
-//   margin: 0;
-//   line-height: 1.15;
-//   font-size: 4rem;
-// }
+              .large_text {
+                font-weight: 700;
+                margin: 1.5rem 0rem;
+              }
 
-// .title,
-// .description {
-//   text-align: center;
-// }
+              .banner_lg_text_1 {
+                font-size: 4rem;
+                line-height: 0.5rem;
+              }
 
-// .description {
-//   margin: 4rem 0;
-//   line-height: 1.5;
-//   font-size: 1.5rem;
-// }
+              .banner_lg_text_2 {
+                font-size: 3.65rem;
+                line-height: 0.5rem;
+              }
 
-// .code {
-//   background: #fafafa;
-//   border-radius: 5px;
-//   padding: 0.75rem;
-//   font-size: 1.1rem;
-//   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-//     Bitstream Vera Sans Mono, Courier New, monospace;
-// }
+              .country {
+                font-size: 3rem;
+                color: $black;
+                margin: 0rem 0;
+              }
 
-// .grid {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   max-width: 800px;
-// }
+              .banner_aside {
+                width: 565px;
 
-// .card {
-//   margin: 1rem;
-//   padding: 1.5rem;
-//   text-align: left;
-//   color: inherit;
-//   text-decoration: none;
-//   border: 1px solid #eaeaea;
-//   border-radius: 10px;
-//   transition: color 0.15s ease, border-color 0.15s ease;
-//   max-width: 300px;
-// }
+                .reprezent {
+                  color: $blue-400;
+                  font-weight: bold;
+                  font-size: 2.813rem;
+                  margin: 0rem;
+                  display: flex;
+                  // align-items: flex-start;
+                  justify-content: flex-start;
+                  width: 100%;
 
-// .card:hover,
-// .card:focus,
-// .card:active {
-//   color: #0070f3;
-//   border-color: #0070f3;
-// }
+                  .me {
+                    color: $blue;
+                  }
 
-// .card h2 {
-//   margin: 0 0 1rem 0;
-//   font-size: 1.5rem;
-// }
+                  .hr {
+                    width: 190px;
+                    height: 3px;
+                    margin-left: 1rem;
+                    background-color: $blue-400;
+                  }
+                }
 
-// .card p {
-//   margin: 0;
-//   font-size: 1.25rem;
-//   line-height: 1.5;
-// }
+                .banner_text {
+                  font-size: 1.125rem;
+                  color: $black;
+                }
 
-// .logo {
-//   height: 1em;
-//   margin-left: 0.5rem;
-// }
+                .banner_footer {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
 
-// @media (max-width: 600px) {
-//   .grid {
-//     width: 100%;
-//     flex-direction: column;
-//   }
-// }
+                  .left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0rem;
 
-// @media (prefers-color-scheme: dark) {
-//   .card,
-//   .footer {
-//     border-color: #222;
-//   }
-//   .code {
-//     background: #111;
-//   }
-//   .logo img {
-//     filter: invert(1);
-//   }
-// }
+                    .download {
+                      color: $black;
+                      font-size: 1.5rem;
+                      font-weight: normal;
+
+                      b {
+                        color: $blue-400;
+                      }
+                    }
+
+                    .donwload_btn {
+                      width: 15.575rem;
+                      height: 4.529rem;
+                      box-shadow: 1.49545px 0px 14.9545px rgba(0, 0, 0, 0.25);
+                      margin-bottom: 1rem;
+                    }
+
+                    .download_google {
+                      background-color: $white;
+                      border-radius: 4px;
+                    }
+                    .download_apple {
+                      background-color: $blue;
+                      border-radius: 4px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .phone_img {
+            position: absolute;
+            left: 70px;
+            top: 20px;
+            height: 200px !important;
+            width: 280px !important;
+          }
+        }
+      }
+    }
+  }
+}

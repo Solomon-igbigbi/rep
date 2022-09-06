@@ -1,3 +1,5 @@
+@import "../../styles/screens";
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -32,6 +34,33 @@
       font-size: 1.2rem;
       font-weight: 600;
       color: white;
+    }
+  }
+}
+
+@media (max-width: $md) and (min-width: $sm) {
+  .navbar {
+    .nav_logo {
+      // gap: 2rem;
+
+      div:last-child {
+        padding-left: 9.7rem;
+        padding-top: 0.5rem;
+      }
+
+      .r_logo {
+        padding-top: 0.7rem;
+        height: 100px;
+        width: 160px;
+      }
+    }
+    .navigations {
+      gap: 2.5rem;
+
+      .nav_link {
+        font-size: 1rem;
+        font-weight: 500;
+      }
     }
   }
 }
