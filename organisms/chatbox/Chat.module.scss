@@ -1,0 +1,57 @@
+.chat_box {
+  font-family: "Roboto";
+  position: relative;
+  height: 300px;
+  letter-spacing: 0.5px;
+  background: #f8f9fb;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+.msg_page {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  overflow-y: auto;
+}
+.chat_box_bottom {
+  margin-top: auto;
+}
+#end_of_chat {
+  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.msg_footer {
+  border-radius: 0px 0px 10px 10px;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 60px;
+}
+.message_form {
+  height: 100%;
+}
+.input_group {
+  margin-right: 20px;
+  border-top: 1px solid #dee6eb;
+  width: 100% !important;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 0 0 7px 7px;
+}
+.input_group input {
+  height: 100%;
+  background: #fff;
+}
+.input_group ::placeholder {
+  color: #c0c0c0 !important;
+}
+.form_control {
+  border: none !important;
+  border-radius: 20px !important;
+}
+.message_input {
+  padding: 6px 20px;
+}
