@@ -7,9 +7,55 @@ import { AntDesignOutlined, UserOutlined } from "@ant-design/icons";
 import { Input, Col, Tooltip, Row, Divider, Avatar, List, Badge } from "antd";
 // import Image from "next/image";
 import Setting from "../../template/setting";
+import { ChatBox } from "../../organisms";
 import { SearchOutlined, FormOutlined } from "@ant-design/icons";
 
 const Chat: NextPage = () => {
+  const [messages, setMessages] = React.useState<object[]>([]);
+  const [user, setUser] = React.useState({});
+
+  React.useEffect(() => {
+    const messageList = [
+      {
+        text: "Hello there",
+        id: "1",
+        sender: {
+          name: "Ironman",
+          uid: "user1",
+          avatar:
+            "https://data.cometchat.com/assets/images/avatars/ironman.png",
+        },
+      },
+      {
+        text: "Hi Mr. Stark",
+        id: "2",
+        sender: {
+          name: "Spiderman",
+          uid: "user2",
+          avatar:
+            "https://data.cometchat.com/assets/images/avatars/spiderman.png",
+        },
+      },
+      {
+        text: "Hello Spiderman, how are you today?",
+        id: "3",
+        sender: {
+          name: "Ironman",
+          uid: "user1",
+          avatar:
+            "https://data.cometchat.com/assets/images/avatars/ironman.png",
+        },
+      },
+    ];
+
+    const user = {
+      uid: "user1",
+    };
+
+    setMessages(messageList);
+    setUser(user);
+  }, [messages, user]);
+
   const show = true;
   const data = [
     {
@@ -146,7 +192,16 @@ const Chat: NextPage = () => {
             </Avatar.Group>
           </div>
         }
-        content={"hello"}
+        content={
+          <div
+            style={{
+              maxWidth: "800px",
+              paddingTop: "100px",
+            }}
+          >
+            <ChatBox messages={messages} user={user} />
+          </div>
+        }
       />
     </Layout>
   );
