@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/screens";
 
 .chatBar {
   display: flex;
@@ -8,8 +9,12 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 0rem;
+  padding: 1rem 0.5rem;
   padding-left: 1rem;
+
+  @media (max-width: $md) and (min-width: $sm) {
+    padding: 0.5rem 0.5rem;
+  }
 
   .time {
     align-self: flex-start;

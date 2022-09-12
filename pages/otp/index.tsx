@@ -36,12 +36,13 @@ const Register: NextPage = () => {
 
       <main className={styles.main}>
         {!verified ? (
-          <Card row={true}>
+          <div className={styles.card}>
             <div className={styles.cardleft}>
-              <div>
+              <div className={styles.logo}>
                 <Logo rlogo={true} size={150} />
               </div>
-              <div>
+              <div className={styles.hand}>
+                <div className={styles.spacing}></div>
                 <Image
                   src={IphoneImg}
                   alt="iphone img"
@@ -64,7 +65,7 @@ const Register: NextPage = () => {
               </div>
               <div className={styles.otpboxes}>
                 {otp.map((item, index) => (
-                  <input key={index} type="number" className={styles.otpbox} />
+                  <input key={index} type="text" className={styles.otpbox} />
                 ))}
               </div>
               <div
@@ -106,18 +107,19 @@ const Register: NextPage = () => {
               <div
                 style={{
                   width: "70%",
-                  margin: "120px auto 0px auto",
+                  margin: "120px auto 20px auto",
                   display: "flex",
                   justifyContent: "flex-end",
+                  alignItems: "center",
                 }}
               >
                 <Image src={leftIcon} alt="arrow left" loading="lazy" />
-                <Text variant="p-sm">Back</Text>
+                <span>Back</span>
               </div>
             </div>
-          </Card>
+          </div>
         ) : (
-          <Card row={true}>
+          <div className={styles.card}>
             <div className={styles.cardleft}>
               <div>
                 <Logo rlogo={true} size={150} />
@@ -190,7 +192,7 @@ const Register: NextPage = () => {
                 </Card>
               </div>
             </div>
-          </Card>
+          </div>
         )}
       </main>
     </div>

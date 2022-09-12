@@ -38,11 +38,16 @@ const ChatHead = ({
             marginBottom: 0,
             color: "#000e80",
           }}
+          size="small"
           defaultActiveKey="1"
           onChange={onChange}
         >
           {tabs.map((data: any) => (
-            <TabPane className={styles.tab} tab={data.name} key={data.key} />
+            <TabPane
+              className={styles.tab}
+              tab={<span className={styles.tab}>{data.name}</span>}
+              key={data.key}
+            />
           ))}
         </Tabs>
       )}

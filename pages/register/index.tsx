@@ -63,17 +63,15 @@ const Register: NextPage = () => {
                 loading="lazy"
                 width={30}
               />
-              <Text variant="p-sm" mg="no-margin" color="white">
-                Back
-              </Text>
+              <span color="white">Back</span>
             </div>
           </div>
 
           <div className={styles.cardRight}>
-            <Text variant="h2" color="black" ta="center">
+            <Text mg="no-margin" variant="h2" color="black" ta="center">
               Register
             </Text>
-            <Text variant="h4" ta="center" style={margins}>
+            <Text mg="no-margin" variant="h4" ta="center" style={margins}>
               Register to connect with your representatives
             </Text>
             <div
@@ -82,19 +80,17 @@ const Register: NextPage = () => {
                 margin: "40px auto",
               }}
             >
-              <Text variant="p-sm" color="blue2" ta="center" style={margins}>
+              <Text
+                mg="no-margin"
+                variant="p-sm"
+                color="blue2"
+                ta="center"
+                style={margins}
+              >
                 Where would you like to interact with your representatives?
               </Text>
             </div>
-            <div
-              style={{
-                width: "65%",
-                margin: "0px auto",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
+            <div className={styles.toogle}>
               <Button
                 size="md"
                 color="blue"
