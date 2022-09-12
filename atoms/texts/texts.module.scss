@@ -6,6 +6,11 @@
   font-size: 0.875rem;
   line-height: 1.2rem;
   text-align: center;
+
+  @media (max-width: $md) and (min-width: $sm) {
+    font-size: 0.575rem;
+    line-height: 1rem;
+  }
 }
 
 .p-sm {
@@ -24,6 +29,10 @@
   font-size: 2rem;
   line-height: 3.723rem;
   text-align: center;
+
+  @media (max-width: $md) and (min-width: $sm) {
+    font-size: 1.5rem;
+  }
 }
 
 .h3 {

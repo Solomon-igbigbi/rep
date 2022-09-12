@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/screens";
 
 .chat_head {
   width: 100%;
@@ -7,6 +8,19 @@
   height: auto;
   padding: 1.5rem 2rem;
   padding-bottom: 0px;
+
+  .tabs {
+    @media (max-width: $md) and (min-width: $sm) {
+      font-size: 0.375rem;
+      // line-height: 1rem;
+    }
+    .tab {
+      @media (max-width: $md) and (min-width: $sm) {
+        font-size: 0.575rem;
+        // line-height: 1rem;
+      }
+    }
+  }
 
   .room_details {
     display: flex;

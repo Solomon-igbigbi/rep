@@ -81,7 +81,7 @@ const SetupConstituency: NextPage = () => {
                 <Button
                   size="md"
                   color="blue2"
-                  variant="outline"
+                  // variant="outline"
                   onClick={() => prev()}
                 >
                   Previous

@@ -31,7 +31,7 @@ const Chat: NextPage = () => {
         id: "2",
         sender: {
           name: "Spiderman",
-          uid: "user2",
+          uid: "user1",
           avatar:
             "https://data.cometchat.com/assets/images/avatars/spiderman.png",
         },
@@ -59,21 +59,21 @@ const Chat: NextPage = () => {
   const show = true;
   const data = [
     {
-      title: "Ant Design Title 1",
+      title: "Richard Moore",
     },
     {
-      title: "Ant Design Title 2",
+      title: "Ado Constituency",
     },
     {
-      title: "Ant Design Title 3",
+      title: "John Charlse",
     },
     {
-      title: "Ant Design Title 4",
+      title: "Richard Moore",
     },
   ];
 
   return (
-    <Layout active="news" head="News">
+    <Layout active="chat" head="Chat">
       <Setting
         sider={
           <div className={styles.sideWrapper}>
@@ -195,8 +195,10 @@ const Chat: NextPage = () => {
         content={
           <div
             style={{
-              maxWidth: "800px",
+              maxWidth: "100%",
+              marginLeft: "200px",
               paddingTop: "100px",
+              marginRight: "30px",
             }}
           >
             <ChatBox messages={messages} user={user} />

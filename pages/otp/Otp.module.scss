@@ -1,4 +1,5 @@
-@import "./colors";
+@import "../../styles/colors";
+@import "../../styles/screens";
 
 .container {
   display: flex;
@@ -22,55 +23,104 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 
-    .cardleft {
-      padding: 1rem 0rem 0rem 1.5rem;
-      width: 40%;
+    .card {
       display: flex;
-      flex-direction: column;
-      background-color: $blue2;
-      border-bottom-left-radius: 10px;
-      border-top-left-radius: 10px;
-      gap: 40px;
-    }
+      background: $white;
+      width: 70%;
+      height: auto;
+      border-radius: 0.5rem;
 
-    .cardright {
-      width: 60%;
-      border: 10px;
-
-      .otpboxes {
-        width: 45%;
-        margin: 0px auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 20px;
-
-        .otpbox {
-          width: 38px;
-          height: 38px;
-          border: 1px solid rgba($color: #ccc7c7, $alpha: 1);
-          border-radius: 10px;
-          text-align: center;
-          font-weight: 400;
-          color: #424242;
-        }
-
-        .otpbox:focus {
-          outline: 1px solid rgba($color: #ffc709, $alpha: 1);
-        }
-
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0;
-        }
+      @media (min-width: $md) {
+        width: 60%;
       }
 
-      .resendlink {
-        width: 18%;
+      .cardleft {
+        padding: 1rem 0rem 0rem 1.5rem;
+        position: relative;
+        width: 40%;
         display: flex;
-        justify-content: space-around;
-        margin: -20px auto;
+        flex-direction: column;
+        background-color: $blue2;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .logo {
+          position: absolute;
+          left: 1.5rem;
+          top: 0rem;
+        }
+
+        .hand {
+          position: absolute;
+          bottom: -1rem;
+          margin-top: 2rem;
+          padding-top: 2rem;
+
+          .spacing {
+            height: 180px;
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+        }
+
+        // @media (min-width: $sm) {
+        //   font-size: 1.5rem;
+        // }
+      }
+
+      .cardright {
+        width: 60%;
+        border: 10px;
+
+        @media (min-width: $md) {
+          padding-top: 2rem;
+        }
+
+        .otpboxes {
+          width: 50%;
+          margin: 0px auto;
+          display: flex;
+          justify-content: space-around;
+          gap: 1rem;
+          align-items: center;
+          margin-top: 20px;
+
+          .otpbox {
+            width: 38px;
+            height: 38px;
+            border: 1px solid rgba($color: #ccc7c7, $alpha: 1);
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 400;
+            color: #424242;
+            background-color: #ffffff;
+          }
+
+          .otpbox:focus {
+            outline: 1px solid rgba($color: #ffc709, $alpha: 1);
+          }
+
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+
+        .resendlink {
+          width: 50%;
+          margin: auto;
+          display: flex;
+          gap: 0.5rem;
+          // text-align: center;
+          justify-content: center;
+          // margin: -20px auto;
+          align-items: center;
+        }
       }
     }
   }

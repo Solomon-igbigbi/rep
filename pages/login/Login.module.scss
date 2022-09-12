@@ -95,6 +95,10 @@
               // position: relative;
               color: #0f0700;
               font-weight: 500;
+
+              @media (max-width: $xm) and (min-width: $sm) {
+                font-size: 1.5rem;
+              }
             }
             .text2 {
               position: relative;
@@ -104,6 +108,10 @@
               font-size: 30px;
               font-weight: 600;
               color: #012160;
+
+              @media (max-width: $xm) and (min-width: $sm) {
+                font-size: 1.5rem;
+              }
             }
             .text3 {
               position: relative;
@@ -113,6 +121,10 @@
               font-size: 30px;
               font-weight: 600;
               color: #1b57ed;
+
+              @media (max-width: $xm) and (min-width: $sm) {
+                font-size: 1.5rem;
+              }
             }
           }
 
@@ -146,6 +158,11 @@
               outline: none;
               background-color: $white;
             }
+
+            @media (max-width: $xm) and (min-width: $sm) {
+              height: 40px;
+              font-size: 0.7rem;
+            }
           }
 
           .password {
@@ -162,12 +179,21 @@
               outline: none;
               background-color: $white;
             }
+
+            @media (max-width: $xm) and (min-width: $sm) {
+              height: 40px;
+              font-size: 0.7rem;
+            }
           }
 
           .forgot {
             font-size: 15px;
             margin-top: 15px;
             color: $blue;
+
+            @media (max-width: $xm) and (min-width: $sm) {
+              font-size: 12px;
+            }
           }
 
           button {
@@ -182,6 +208,10 @@
             cursor: pointer;
             outline: none;
             margin-top: 30px;
+
+            @media (max-width: $xm) and (min-width: $sm) {
+              font-size: 12px;
+            }
           }
         }
       }
@@ -208,6 +238,10 @@
           letter-spacing: 0em;
           line-height: 50px;
           color: rgba(255, 255, 255, 1);
+
+          @media (max-width: $xm) and (min-width: $sm) {
+            font-size: 25px;
+          }
         }
         .text2 {
           display: block;
@@ -216,14 +250,19 @@
           font-family: "Helvetica";
           font-weight: 400;
           letter-spacing: 0em;
-          line-height: 100%;
+          line-height: 1.8rem;
           color: rgba(255, 255, 255, 1);
           width: 70%;
           text-transform: none;
+
+          @media (max-width: $xm) and (min-width: $sm) {
+            font-size: 18px;
+            line-height: 1.5rem;
+          }
         }
         button {
           position: relative;
-          width: 215px;
+          width: 190px;
           height: 51px;
           color: #ffffff;
           font-size: 19px;
@@ -233,20 +272,31 @@
           border: 2px solid #ffffff;
           background: #012160;
           margin-top: 20px;
+          cursor: pointer;
+
+          @media (max-width: $xm) and (min-width: $sm) {
+            font-size: 12px;
+            width: 140px;
+            height: 45px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }
   }
 }
 
-@media (max-width: $xm) and (min-width: $sm) {
-  .signin {
-    font-size: 1rem;
-  }
-  .text2 {
-    font-size: 1rem;
-  }
-  .text3 {
-    font-size: 1rem;
-  }
-}
+// @media (max-width: $xm) and (min-width: $sm) {
+//   .signin {
+//     font-size: 1rem;
+//   }
+//   .text2 {
+//     font-size: 1rem;
+//   }
+//   .text3 {
+//     font-size: 1rem;
+//   }
+// }

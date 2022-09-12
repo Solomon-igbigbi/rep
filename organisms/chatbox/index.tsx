@@ -24,13 +24,14 @@ const ChatBox = ({
   React.useEffect(() => {
     if (!message && typingListener) {
       typingListener();
+      setMessage("");
     }
   });
 
-  const handleSendMessage = (e: any) => {
-    e.preventDefault();
-    setMessage("");
-  };
+  // const handleSendMessage = (e: any) => {
+  //   e.preventDefault();
+  //   setMessage("");
+  // };
 
   return (
     <div className={styles.chat_box}>
@@ -46,7 +47,7 @@ const ChatBox = ({
           <div id="end_of_chat"></div>
         </div> */}
       </div>
-      <div className={styles.msg_footer}>
+      {/* <div className={styles.msg_footer}>
         <form className={styles.message_form} onSubmit={handleSendMessage}>
           <div className={styles.input_group}>
             <input
@@ -59,7 +60,7 @@ const ChatBox = ({
             />
           </div>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };
