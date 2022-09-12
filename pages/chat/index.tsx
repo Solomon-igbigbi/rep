@@ -13,21 +13,21 @@ const Chat: NextPage = () => {
   const show = true;
   const data = [
     {
-      title: "Ant Design Title 1",
+      title: "Richard Moore",
     },
     {
-      title: "Ant Design Title 2",
+      title: "Ado Constituency",
     },
     {
-      title: "Ant Design Title 3",
+      title: "John Charlse",
     },
     {
-      title: "Ant Design Title 4",
+      title: "Richard Moore",
     },
   ];
 
   return (
-    <Layout active="news" head="News">
+    <Layout active="chat" head="Chat">
       <Setting
         sider={
           <div className={styles.sideWrapper}>
@@ -146,7 +146,7 @@ const Chat: NextPage = () => {
             </Avatar.Group>
           </div>
         }
-        content={"hello"}
+        content={""}
       />
     </Layout>
   );
