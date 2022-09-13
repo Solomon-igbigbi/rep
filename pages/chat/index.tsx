@@ -31,7 +31,7 @@ const Chat: NextPage = () => {
         id: "2",
         sender: {
           name: "Spiderman",
-          uid: "user1",
+          uid: "user2",
           avatar:
             "https://data.cometchat.com/assets/images/avatars/spiderman.png",
         },

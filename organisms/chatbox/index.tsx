@@ -1,6 +1,7 @@
 import React from "react";
 import MessageList from "../messagelist";
 import styles from "./Chat.module.scss";
+import { SendOutlined } from "@ant-design/icons";
 
 interface Iprops {
   messages?: any;
@@ -28,10 +29,10 @@ const ChatBox = ({
     }
   });
 
-  // const handleSendMessage = (e: any) => {
-  //   e.preventDefault();
-  //   setMessage("");
-  // };
+  const handleSendMessage = (e: any) => {
+    e.preventDefault();
+    setMessage("");
+  };
 
   return (
     <div className={styles.chat_box}>
@@ -47,20 +48,24 @@ const ChatBox = ({
           <div id="end_of_chat"></div>
         </div> */}
       </div>
-      {/* <div className={styles.msg_footer}>
+      <div className={styles.msg_footer}>
         <form className={styles.message_form} onSubmit={handleSendMessage}>
           <div className={styles.input_group}>
             <input
               type="text"
               className={`${styles.form_control} ${styles.message_input}`}
-              placeholder="Type something"
+              placeholder="Type a new message"
               value={message}
               onChange={(event: any) => setMessage(event.target.value)}
               required
             />
+            <div className={styles.input_icons}>
+              <div className={styles.text_icon}>hello</div>
+              <SendOutlined />
+            </div>
           </div>
         </form>
-      </div> */}
+      </div>
     </div>
   );
 };
