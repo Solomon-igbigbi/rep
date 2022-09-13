@@ -1,6 +1,5 @@
 import React from "react";
 import { SmileOutlined } from "@ant-design/icons";
-import { Avatar } from "antd";
 import styles from "./message.module.scss";
 
 interface Iprops {
@@ -46,27 +45,20 @@ const MessageList = ({
           renderName = null;
         } else {
           renderName = (
-            <div className={styles.sender_name}>{message.sender.name}</div>
+            <div className={styles.sender_name}>@{message.sender.name}</div>
           );
         }
         return (
           <div
             key={message.id}
-            className={styles.chat_bubbe_row}
             style={{
               display: "flex",
               padding: "15px 20px",
               alignItems: "center",
               flexDirection: isUser ? "row-reverse" : "row",
+              overflowY: "auto",
             }}
           >
-            <Avatar
-              icon={<SmileOutlined />}
-              alt="sender avatar"
-              className={styles.avatar}
-              style={isUser ? { marginLeft: "15px" } : { marginRight: "15px" }}
-            />
-
             <div
               className={`${styles.chat_bubble} ${
                 isUser ? styles.is_user : styles.is_other
